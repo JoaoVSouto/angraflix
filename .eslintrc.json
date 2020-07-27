@@ -40,7 +40,8 @@
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       { "allowExpressions": true }
-    ]
+    ],
+    "camelcase": "off"
   },
   "settings": {
     "import/resolver": {
