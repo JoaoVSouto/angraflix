@@ -37,7 +37,9 @@ const BannerMain: React.FC<IProps> = ({
 
         <Item>
           <VideoIframeResponsive youtubeId={youtubeId} />
-          <WatchButton>Assistir</WatchButton>
+          <WatchButton href={url} target="_blank" rel="noopener noreferrer">
+            Assistir
+          </WatchButton>
         </Item>
       </ContentAreaContainer>
     </BannerMainContainer>

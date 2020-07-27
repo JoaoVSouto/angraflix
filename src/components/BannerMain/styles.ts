@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { ButtonLink } from '../Button';
+
 export const ContentAreaContainer = styled.section`
   margin-left: 5%;
   margin-right: 5%;
@@ -107,27 +109,13 @@ export const BannerMainContainer = styled.section<IBannerMainContainerProps>`
   }
 `;
 
-export const WatchButton = styled.button`
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
-  cursor: pointer;
-  padding: 16px 24px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  outline: none;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid transparent;
+export const WatchButton = styled(ButtonLink)`
   color: var(--black);
   background: var(--white);
-  border-color: var(--black);
-  transition: opacity 0.3s;
   display: none;
   margin: 0 auto;
 
   @media (max-width: 800px) {
-    display: block;
+    display: table;
   }
 `;
