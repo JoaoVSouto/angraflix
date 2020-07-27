@@ -22,6 +22,7 @@ body {
 
 body {
   padding-top: 94px;
+  background-color: #141414;
 }
 
 @media (max-width: 800px) {
