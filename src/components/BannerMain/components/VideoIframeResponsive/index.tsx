@@ -3,15 +3,15 @@ import React from 'react';
 import { VideoContainer, ResponsiveIframe } from './styles';
 
 interface IProps {
-  youtubeID: string;
+  youtubeId: string;
 }
 
-const VideoIframeResponsive: React.FC<IProps> = ({ youtubeID }) => {
+const VideoIframeResponsive: React.FC<IProps> = ({ youtubeId }) => {
   return (
     <VideoContainer>
       <ResponsiveIframe
         title="Dummy title"
-        src={`https://www.youtube.com/embed/${youtubeID}?autoplay=0&mute=1`}
+        src={`https://www.youtube.com/embed/${youtubeId}?autoplay=0&mute=1`}
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
