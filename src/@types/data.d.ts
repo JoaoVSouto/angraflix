@@ -10,7 +10,7 @@ interface DataVideo {
 
 interface DataCategory {
   titulo: string;
-  link: string;
+  link?: string;
   cor?: string;
   link_extra?: DataLinkExtra;
   videos: DataVideo[];
