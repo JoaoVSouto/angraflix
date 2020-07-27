@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Title = styled.h3`
+interface ITitleProps {
+  categoryColor?: string;
+}
+
+export const Title = styled.h3<ITitleProps>`
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
@@ -11,6 +15,7 @@ export const Title = styled.h3`
   background: red;
   line-height: 1;
   border-radius: 4px;
+  background-color: ${({ categoryColor }) => categoryColor || 'red'};
 
   @media (max-width: 800px) {
     font-size: 18px;

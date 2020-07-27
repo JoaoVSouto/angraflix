@@ -24,9 +24,7 @@ const Carousel: React.FC<IProps> = ({ category, ignoreFirstVideo }) => {
     <VideoCardGroupContainer>
       {category && (
         <>
-          <Title style={{ backgroundColor: categoryColor || 'red' }}>
-            {categoryTitle}
-          </Title>
+          <Title categoryColor={categoryColor}>{categoryTitle}</Title>
           {categoryExtraLink && (
             <ExtraLink href={categoryExtraLink.url} target="_blank">
               {categoryExtraLink.text}
