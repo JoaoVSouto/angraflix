@@ -1,13 +1,9 @@
 import React from 'react';
 
 import VideoCard from './components/VideoCard';
+import Slider, { SliderItem } from './components/Slider';
 
-import {
-  ExtraLink,
-  Title,
-  VideoCardGroupContainer,
-  VideoCardList,
-} from './styles';
+import { ExtraLink, Title, VideoCardGroupContainer } from './styles';
 
 interface IProps {
   ignoreFirstVideo?: boolean;
@@ -33,23 +29,23 @@ const Carousel: React.FC<IProps> = ({ category, ignoreFirstVideo }) => {
         </>
       )}
 
-      <VideoCardList>
+      <Slider>
         {videos?.map((video, index) => {
           if (ignoreFirstVideo && index === 0) {
             return null;
           }
 
           return (
-            <li key={video.titulo}>
+            <SliderItem key={video.titulo}>
               <VideoCard
                 videoTitle={video.titulo}
                 videoURL={video.url}
                 categoryColor={categoryColor}
               />
-            </li>
+            </SliderItem>
           );
         })}
-      </VideoCardList>
+      </Slider>
     </VideoCardGroupContainer>
   );
 };
