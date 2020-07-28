@@ -50,6 +50,8 @@ export const Category = styled.h1`
 `;
 
 export const Description = styled.p`
+  margin-right: 24px;
+
   @media (max-width: 800px) {
     display: none;
   }
@@ -62,9 +64,13 @@ export const Title = styled.h2`
   line-height: 1;
   margin-top: 0;
   margin-bottom: 32px;
+  margin-right: 24px;
+
+  @media (max-width: 850px) {
+    font-size: 32px;
+  }
 
   @media (max-width: 800px) {
-    font-size: 32px;
     text-align: center;
   }
 `;
