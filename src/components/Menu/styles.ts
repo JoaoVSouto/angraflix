@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import { ButtonLink as GenericButtonLink } from '../Button';
 
@@ -27,7 +28,7 @@ export const NavMenu = styled.nav`
   }
 `;
 
-export const Logo = styled.a`
+export const Logo = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
