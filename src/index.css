@@ -12,6 +12,9 @@
   --white: #fff;
   --frontEnd: #6bd1ff;
   --backEnd: #00c86f;
+
+  --bodyPaddingTopLg: 94px;
+  --bodyPaddingTopSm: 40px;
 }
 
 html,
@@ -20,14 +23,23 @@ body {
   padding: 0;
 }
 
+#root {
+  min-height: calc(100vh - var(--bodyPaddingTopLg));
+  display: flex;
+  flex-direction: column;
+}
+
 body {
-  padding-top: 94px;
-  background-color: #141414;
+  padding-top: var(--bodyPaddingTopLg);
 }
 
 @media (max-width: 800px) {
+  #root {
+    min-height: calc(100vh - var(--bodyPaddingTopSm));
+  }
+
   body {
-    padding-top: 40px;
+    padding-top: var(--bodyPaddingTopSm);
   }
 }
 
