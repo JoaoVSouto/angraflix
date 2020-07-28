@@ -35,6 +35,7 @@ export const Container = styled.ul<IContainerProps>`
 
 export const SliderItem = styled.li`
   margin-right: 16px;
+  position: relative;
 
   img {
     margin: 16px;

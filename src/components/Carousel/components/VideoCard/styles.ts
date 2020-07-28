@@ -28,9 +28,26 @@ export const VideoCardContainer = styled.a<IProps>`
   &:hover,
   &:focus {
     opacity: 0.5;
+
+    + span {
+      transform: translateY(0);
+    }
   }
 
   &:not(:first-child) {
     margin-left: 20px;
   }
+`;
+
+export const VideoTitle = styled.span`
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  font-size: 32px;
+  font-weight: bold;
+  transform: translateY(-150%);
+  pointer-events: none;
+  transition: transform 0.3s;
+  max-width: calc(100% - 32px);
+  max-height: calc(100% - 32px);
 `;

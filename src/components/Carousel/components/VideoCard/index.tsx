@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
-import { VideoCardContainer } from './styles';
+import { VideoCardContainer, VideoTitle } from './styles';
 
 import getYoutubeId from '../../../../utils/getYoutubeId';
 
@@ -19,15 +19,25 @@ const VideoCard: React.FC<IProps> = ({
     videoURL
   )}/hqdefault.jpg`;
 
+  const videoTitleEllipsed = useMemo(
+    () =>
+      videoTitle.length > 50 ? `${videoTitle.slice(0, 50)}...` : videoTitle,
+    [videoTitle]
+  );
+
   return (
-    <VideoCardContainer
-      url={image}
-      categoryColor={categoryColor}
-      href={videoURL}
-      target="_blank"
-      rel="noopener noreferrer"
-      title={videoTitle}
-    />
+    <>
+      <VideoCardContainer
+        url={image}
+        categoryColor={categoryColor}
+        href={videoURL}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={videoTitle}
+      />
+
+      <VideoTitle>{videoTitleEllipsed}</VideoTitle>
+    </>
   );
 };
 
