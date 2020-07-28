@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.ul`
+interface IContainerProps {
+  categoryColor?: string;
+}
+
+export const Container = styled.ul<IContainerProps>`
   padding: 0;
   margin: 0;
 
@@ -10,12 +14,13 @@ export const Container = styled.ul`
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     transform: initial;
 
     &:before {
-      font-size: 30px;
+      font-size: 40px;
+      color: ${({ categoryColor }) => categoryColor || 'red'};
     }
   }
 
@@ -24,7 +29,7 @@ export const Container = styled.ul`
   }
 
   .slick-next {
-    right: 16px;
+    right: 0;
   }
 `;
 

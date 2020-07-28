@@ -5,9 +5,13 @@ import { Container } from './styles';
 
 export { SliderItem } from './styles';
 
-const Slider: React.FC = ({ children }) => {
+interface IProps {
+  categoryColor?: string;
+}
+
+const Slider: React.FC<IProps> = ({ children, categoryColor }) => {
   return (
-    <Container>
+    <Container categoryColor={categoryColor}>
       <SlickSlider
         dots={false}
         speed={300}
