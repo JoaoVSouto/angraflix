@@ -11,6 +11,7 @@ export const Categories = styled.div`
     font-size: 1.5rem;
     font-weight: normal;
     margin: 0;
+    margin-bottom: 16px;
     padding-bottom: 4px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   }

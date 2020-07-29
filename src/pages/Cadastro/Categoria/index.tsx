@@ -64,9 +64,18 @@ const CadastroCategoria: React.FC = () => {
 
     setCategories([...categories, categoryData]);
     setCategoryInfo(initialCategoryInfo);
+    document
+      .querySelectorAll('.filled')
+      .forEach(elem => elem.classList.remove('filled'));
   };
 
   const handleInputChange = (e: InputChangeHandlerEvent): void => {
+    if (e.target.value) {
+      e.target.classList.add('filled');
+    } else {
+      e.target.classList.remove('filled');
+    }
+
     setCategoryInfo({
       ...categoryInfo,
       [e.target.name]: e.target.value,
@@ -104,6 +113,7 @@ const CadastroCategoria: React.FC = () => {
             id="categoria-desc-link"
             value={categoryInfo.descriptionUrl}
             onChange={handleInputChange}
+            style={{ display: categoryInfo.description ? 'block' : 'none' }}
           />
         )}
 
@@ -114,7 +124,12 @@ const CadastroCategoria: React.FC = () => {
           id="categoria-color"
           value={categoryInfo.color}
           onChange={handleInputChange}
-        />
+        >
+          <div
+            className="color-swatch"
+            style={{ backgroundColor: categoryInfo.color }}
+          />
+        </Input>
 
         <SubmitButton type="submit">Cadastrar</SubmitButton>
       </form>

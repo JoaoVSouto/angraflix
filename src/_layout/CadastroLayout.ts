@@ -13,6 +13,14 @@ const CadastroLayout = styled.main`
     font-weight: normal;
   }
 
+  form {
+    margin-top: 32px;
+
+    div + div {
+      margin-top: 32px;
+    }
+  }
+
   @media (max-width: 800px) {
     padding-top: 25px;
   }

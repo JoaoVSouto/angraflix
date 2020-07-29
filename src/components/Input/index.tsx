@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Container } from './styles';
+
 interface IProps {
   label: string;
 }
@@ -7,15 +9,17 @@ interface IProps {
 const Input: React.FC<JSX.IntrinsicElements['input'] & IProps> = ({
   label,
   id,
+  children,
   ...rest
 }) => {
   return (
-    <div>
+    <Container>
       <label htmlFor={id}>
-        {label}
         <input id={id} {...rest} />
+        <span>{label}</span>
       </label>
-    </div>
+      {children}
+    </Container>
   );
 };
 
