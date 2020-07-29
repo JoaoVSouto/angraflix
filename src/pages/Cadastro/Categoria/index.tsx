@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import Input from '../../../components/Input';
+import Textarea from '../../../components/Textarea';
+
 import initialData from '../../../data/dados_iniciais.json';
 
 import { Categories, Category } from './styles';
@@ -75,57 +78,43 @@ const CadastroCategoria: React.FC = () => {
       <h1>Cadastro de Categoria</h1>
 
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="categoria-name">
-            Nome da categoria
-            <input
-              required
-              name="name"
-              type="text"
-              id="categoria-name"
-              value={categoryInfo.name}
-              onChange={handleInputChange}
-            />
-          </label>
-        </div>
+        <Input
+          type="text"
+          name="name"
+          label="Nome da categoria"
+          id="categoria-name"
+          value={categoryInfo.name}
+          onChange={handleInputChange}
+          required
+        />
 
-        <div>
-          <label htmlFor="categoria-desc">
-            Descrição
-            <textarea
-              name="description"
-              id="categoria-desc"
-              value={categoryInfo.description}
-              onChange={handleInputChange}
-            />
-          </label>
-        </div>
+        <Textarea
+          label="Descrição"
+          name="description"
+          id="categoria-desc"
+          value={categoryInfo.description}
+          onChange={handleInputChange}
+        />
 
-        <div>
-          <label htmlFor="categoria-desc-link">
-            URL da descrição
-            <input
-              name="descriptionUrl"
-              type="url"
-              id="categoria-desc-link"
-              value={categoryInfo.descriptionUrl}
-              onChange={handleInputChange}
-            />
-          </label>
-        </div>
+        {categoryInfo.description && (
+          <Input
+            type="url"
+            name="descriptionUrl"
+            label="URL da descrição"
+            id="categoria-desc-link"
+            value={categoryInfo.descriptionUrl}
+            onChange={handleInputChange}
+          />
+        )}
 
-        <div>
-          <label htmlFor="categoria-color">
-            Cor
-            <input
-              name="color"
-              type="color"
-              id="categoria-color"
-              value={categoryInfo.color}
-              onChange={handleInputChange}
-            />
-          </label>
-        </div>
+        <Input
+          type="color"
+          name="color"
+          label="Cor"
+          id="categoria-color"
+          value={categoryInfo.color}
+          onChange={handleInputChange}
+        />
 
         <button type="submit">Cadastrar</button>
       </form>
