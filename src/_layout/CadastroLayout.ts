@@ -4,7 +4,7 @@ const CadastroLayout = styled.main`
   background-color: var(--black);
   color: var(--white);
   flex: 1;
-  padding: 50px 5% 0;
+  padding: 25px 5%;
 
   h1 {
     margin: 0;

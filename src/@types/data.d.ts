@@ -13,5 +13,6 @@ interface DataCategory {
   link?: string;
   cor?: string;
   link_extra?: DataLinkExtra;
+  addedNow?: boolean;
   videos: DataVideo[];
 }
