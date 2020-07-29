@@ -1,183 +1,220 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
+      "titulo": "Angels Cry",
+      "cor": "#cc0611",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Angels_Cry"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Unfinished Allegro",
+          "url": "https://youtu.be/qfrzx9G6fKg"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Carry On",
+          "url": "https://youtu.be/pwcKa0d1Kfk"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "Time",
+          "url": "https://youtu.be/M1ZQu6BxiMs"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Angels Cry",
+          "url": "https://youtu.be/Yuz6xdTsFRw"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Stand Away",
+          "url": "https://youtu.be/zzwuf8EELcg"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          "titulo": "Never Understand",
+          "url": "https://youtu.be/tmJa6-CFX2o"
         },
         {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+          "titulo": "Wuthering Heights",
+          "url": "https://youtu.be/SMiKO-r1smg"
         },
         {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Streets of Tomorrow",
+          "url": "https://youtu.be/5GznH7W5l_8"
+        },
+        {
+          "titulo": "Evil Warning",
+          "url": "https://youtu.be/SeeT2qQ2u38"
+        },
+        {
+          "titulo": "Lasting Child",
+          "url": "https://youtu.be/w_w_FlFYe3Y"
         }
       ]
     },
     {
-      "titulo": "Back End",
-      "cor": "#00C86F",
+      "titulo": "Freedom Call",
+      "cor": "#c7ae90",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Freedom_Call_(%C3%A1lbum_de_Angra)"
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "Freedom Call",
+          "url": "https://youtu.be/b_Nh0wRtH6c"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "Queen of the Night (Remix)",
+          "url": "https://youtu.be/xbF47q5obds"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "Reaching Horizons",
+          "url": "https://youtu.be/rtDvibixzQU"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "Stand Away (Orchestral Version)",
+          "url": "https://youtu.be/zGwR2nIW0qw"
         },
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Painkiller (Remixed Version)",
+          "url": "https://youtu.be/pyr-6Wbqtxg"
+        },
+        {
+          "titulo": "Deep Blue",
+          "url": "https://youtu.be/qzc-AqfUePE"
+        },
+        {
+          "titulo": "Angels Cry (Acoustic) (Live)",
+          "url": "https://youtu.be/HDnAps3b-Ow"
+        },
+        {
+          "titulo": "Never Understand (Acoustic) (Live)",
+          "url": "https://youtu.be/yq3Dt1BTN_0"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
+      "titulo": "Holy Land",
+      "cor": "#986438",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Holy_Land"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Crossing",
+          "url": "https://youtu.be/HRZk86h-Ngo"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Nothing to Say",
+          "url": "https://youtu.be/o_OhKvepsDw"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Silence and Distance",
+          "url": "https://youtu.be/59tCf1HwwZ4"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "Carolina IV",
+          "url": "https://youtu.be/LgzGzlQezAc"
+        },
+        {
+          "titulo": "Holy Land",
+          "url": "https://youtu.be/-JjS6VjyRZc"
+        },
+        {
+          "titulo": "The Shaman",
+          "url": "https://youtu.be/Lu7K-wUUCas"
+        },
+        {
+          "titulo": "Make Believe",
+          "url": "https://youtu.be/QnRxa8JvBRw"
+        },
+        {
+          "titulo": "Z.I.T.O.",
+          "url": "https://youtu.be/lvLp5xhWsLg"
+        },
+        {
+          "titulo": "Deep Blue",
+          "url": "https://youtu.be/q7-leTNLmU4"
+        },
+        {
+          "titulo": "Lullaby for Lucifer",
+          "url": "https://youtu.be/cN1-V4smVfs"
         }
       ]
     },
     {
-      "titulo": "Filmes",
-      "cor": "orange",
+      "titulo": "Holy Live",
+      "cor": "#a45a3d",
+      "link_extra": {
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Holy_Live"
+      },
       "videos": [
         {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "titulo": "Crossing (Live)",
+          "url": "https://youtu.be/hvEDaj2rwOM"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Nothing to Say (Live)",
+          "url": "https://youtu.be/UqfpeaQB3Rg"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "Z.I.T.O. (Live)",
+          "url": "https://youtu.be/cuXl6MGaGrs"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "Carolina IV (Live)",
+          "url": "https://youtu.be/Ijs_W3Q8eds"
         }
       ]
     },
     {
-      "titulo": "Games",
-      "cor": "red",
+      "titulo": "Fireworks",
+      "cor": "#82020c",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Fireworks_(%C3%A1lbum)"
       },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "Wings of Reality",
+          "url": "https://youtu.be/rBVe5ZPjHbU"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+          "titulo": "Petrified Eyes",
+          "url": "https://youtu.be/SO3Tm5RtHts"
         },
         {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+          "titulo": "Lisbon",
+          "url": "https://youtu.be/sEENXY01d-s"
         },
         {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+          "titulo": "Metal Icarus",
+          "url": "https://youtu.be/L6hAqj5peFw"
         },
         {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
-        }
-      ]
-    },
-    {
-      "titulo": "Aprendendo a aprender tecnologia",
-      "cor": "#6b5be2",
-      "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
-      },
-      "videos": [
-        {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "titulo": "Paradise",
+          "url": "https://youtu.be/UT0wm6Qvzng"
         },
         {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "titulo": "Mystery Machine",
+          "url": "https://youtu.be/7aUqkNMfi6c"
         },
         {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Fireworks",
+          "url": "https://youtu.be/_0goayXaUZc"
         },
         {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+          "titulo": "Extreme Dream",
+          "url": "https://youtu.be/nw8RbMZRnCw"
         },
         {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo": "Gentle Change",
+          "url": "https://youtu.be/mnoIm-qmvu0"
+        },
+        {
+          "titulo": "Speed",
+          "url": "https://youtu.be/V_RT-lg2XmA"
         }
       ]
     }

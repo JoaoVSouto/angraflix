@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       <BannerMain
         videoTitle={data.categorias[0].videos[0].titulo}
         url={data.categorias[0].videos[0].url}
-        videoDescription="O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores."
+        videoDescription="Unfinished Allegro (instrumental) foi a música de abertura do álbum Angels Cry, lançado em 1993."
       />
 
       {data.categorias.map((category, index) => (
