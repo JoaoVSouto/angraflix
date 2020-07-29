@@ -2,18 +2,13 @@ import React from 'react';
 
 import { Container } from './styles';
 
+import logo from '../../assets/img/footer_logo.png';
+
 const Footer: React.FC = () => {
   return (
     <Container>
-      <a
-        href="https://www.alura.com.br/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg"
-          alt="Alura"
-        />
+      <a href="http://www.angra.net/" target="_blank" rel="noopener noreferrer">
+        <img src={logo} alt="Angra" />
       </a>
       <p>
         Orgulhosamente criado durante a <strong>Imersão React da Alura</strong>

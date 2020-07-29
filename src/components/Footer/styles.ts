@@ -10,6 +10,11 @@ export const Container = styled.footer`
   color: var(--white);
   text-align: center;
 
+  img {
+    max-height: 80px;
+    margin-top: -24px;
+  }
+
   @media (max-width: 800px) {
     margin-bottom: 50px;
   }
