@@ -23,7 +23,7 @@ export const NavMenu = styled.nav`
   border-bottom: 2px solid var(--primary);
 
   @media (max-width: 800px) {
-    height: 40px;
+    height: 60px;
     justify-content: center;
   }
 `;
@@ -39,7 +39,7 @@ export const Logo = styled(Link)`
 
   @media (max-width: 800px) {
     > img {
-      max-width: 105px;
+      max-width: 152px;
     }
   }
 `;
