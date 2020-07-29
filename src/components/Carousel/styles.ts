@@ -9,6 +9,7 @@ export const Title = styled.h3<ITitleProps>`
   font-weight: normal;
   font-size: 35px;
   line-height: 1;
+  margin-left: 5%;
   margin-bottom: 16px;
   display: inline-block;
   padding: 20px;
@@ -36,13 +37,12 @@ export const ExtraLink = styled.a`
   @media (max-width: 800px) {
     display: block;
     margin-bottom: 16px;
-    margin-left: 0;
+    margin-left: 5%;
   }
 `;
 
 export const VideoCardGroupContainer = styled.section`
   color: var(--white);
   min-height: 197px;
-  margin-left: 5%;
   margin-bottom: 16px;
 `;

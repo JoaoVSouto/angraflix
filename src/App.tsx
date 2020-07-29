@@ -10,7 +10,6 @@ import Routes from './routes';
 const Main = styled.main`
   background-color: #141414;
   color: var(--white);
-  padding: 50px 5% 0;
   flex: 1;
 `;
 
