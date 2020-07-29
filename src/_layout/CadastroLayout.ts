@@ -8,6 +8,9 @@ const CadastroLayout = styled.main`
 
   h1 {
     margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
   }
 
   @media (max-width: 800px) {

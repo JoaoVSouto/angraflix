@@ -5,7 +5,7 @@ import Textarea from '../../../components/Textarea';
 
 import initialData from '../../../data/dados_iniciais.json';
 
-import { Categories, Category } from './styles';
+import { Categories, Category, SubmitButton } from './styles';
 
 type InputChangeHandlerEvent =
   | React.ChangeEvent<HTMLInputElement>
@@ -75,7 +75,7 @@ const CadastroCategoria: React.FC = () => {
 
   return (
     <>
-      <h1>Cadastro de Categoria</h1>
+      <h1>Nova categoria</h1>
 
       <form onSubmit={handleSubmit}>
         <Input
@@ -116,7 +116,7 @@ const CadastroCategoria: React.FC = () => {
           onChange={handleInputChange}
         />
 
-        <button type="submit">Cadastrar</button>
+        <SubmitButton type="submit">Cadastrar</SubmitButton>
       </form>
 
       <Categories>
