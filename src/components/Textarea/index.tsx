@@ -14,8 +14,8 @@ const Textarea: React.FC<JSX.IntrinsicElements['textarea'] & IProps> = ({
   return (
     <Container>
       <label htmlFor={id}>
-        <span>{label}</span>
         <textarea id={id} {...rest} />
+        <span>{label}</span>
       </label>
     </Container>
   );

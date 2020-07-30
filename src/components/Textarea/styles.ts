@@ -15,12 +15,27 @@ export const Container = styled.div`
     border-radius: 4px;
     outline: none;
     padding: 16px;
+    padding-top: 28px;
+    font-size: 18px;
     resize: none;
     vertical-align: top;
+
+    &:focus,
+    &.filled {
+      + span {
+        font-size: 12px;
+        transform: translateY(-32px);
+        color: var(--grayMedium);
+      }
+    }
   }
 
   span {
     position: absolute;
-    display: none;
+    display: block;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: all 0.3s;
   }
 `;
