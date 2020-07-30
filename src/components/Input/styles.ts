@@ -1,7 +1,21 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+interface IPropsContainer {
+  hideBehind?: boolean;
+}
+
+export const Container = styled.div<IPropsContainer>`
   position: relative;
+  transition: all 0.3s;
+
+  ${({ hideBehind }) =>
+    hideBehind &&
+    css`
+      transform: translateY(-170%);
+      z-index: -1;
+      height: 0;
+      margin: 0 !important;
+    `}
 
   label {
     display: block;

@@ -105,17 +105,15 @@ const CadastroCategoria: React.FC = () => {
           onChange={handleInputChange}
         />
 
-        {categoryInfo.description && (
-          <Input
-            type="url"
-            name="descriptionUrl"
-            label="URL da descrição"
-            id="categoria-desc-link"
-            value={categoryInfo.descriptionUrl}
-            onChange={handleInputChange}
-            style={{ display: categoryInfo.description ? 'block' : 'none' }}
-          />
-        )}
+        <Input
+          type="url"
+          name="descriptionUrl"
+          label="URL da descrição"
+          id="categoria-desc-link"
+          value={categoryInfo.descriptionUrl}
+          onChange={handleInputChange}
+          hideBehind={!categoryInfo.description}
+        />
 
         <Input
           type="color"
