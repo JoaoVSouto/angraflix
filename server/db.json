@@ -1,0 +1,356 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Angels Cry",
+      "cor": "#cc0611",
+      "link_extra": {
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Angels_Cry"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Freedom Call",
+      "cor": "#c7ae90",
+      "link_extra": {
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Freedom_Call_(%C3%A1lbum_de_Angra)"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Holy Land",
+      "cor": "#986438",
+      "link_extra": {
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Holy_Land"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Holy Live",
+      "cor": "#a45a3d",
+      "link_extra": {
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Holy_Live"
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Fireworks",
+      "cor": "#82020c",
+      "link_extra": {
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Fireworks_(%C3%A1lbum)"
+      },
+      "videos": [
+        {
+          "id": 1,
+          "titulo": "Wings of Reality",
+          "url": "https://youtu.be/rBVe5ZPjHbU"
+        },
+        {
+          "id": 2,
+          "titulo": "Petrified Eyes",
+          "url": "https://youtu.be/SO3Tm5RtHts"
+        },
+        {
+          "id": 3,
+          "titulo": "Lisbon",
+          "url": "https://youtu.be/sEENXY01d-s"
+        },
+        {
+          "id": 4,
+          "titulo": "Metal Icarus",
+          "url": "https://youtu.be/L6hAqj5peFw"
+        },
+        {
+          "id": 5,
+          "titulo": "Paradise",
+          "url": "https://youtu.be/UT0wm6Qvzng"
+        },
+        {
+          "id": 6,
+          "titulo": "Mystery Machine",
+          "url": "https://youtu.be/7aUqkNMfi6c"
+        },
+        {
+          "id": 7,
+          "titulo": "Fireworks",
+          "url": "https://youtu.be/_0goayXaUZc"
+        },
+        {
+          "id": 8,
+          "titulo": "Extreme Dream",
+          "url": "https://youtu.be/nw8RbMZRnCw"
+        },
+        {
+          "id": 9,
+          "titulo": "Gentle Change",
+          "url": "https://youtu.be/mnoIm-qmvu0"
+        },
+        {
+          "id": 10,
+          "titulo": "Speed",
+          "url": "https://youtu.be/V_RT-lg2XmA"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Unfinished Allegro",
+      "description": "Unfinished Allegro (instrumental) foi a música de abertura do álbum Angels Cry, lançado em 1993.",
+      "url": "https://youtu.be/qfrzx9G6fKg"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Carry On",
+      "url": "https://youtu.be/pwcKa0d1Kfk"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Time",
+      "url": "https://youtu.be/M1ZQu6BxiMs"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Angels Cry",
+      "url": "https://youtu.be/Yuz6xdTsFRw"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Stand Away",
+      "url": "https://youtu.be/zzwuf8EELcg"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Never Understand",
+      "url": "https://youtu.be/tmJa6-CFX2o"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Wuthering Heights",
+      "url": "https://youtu.be/SMiKO-r1smg"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "Streets of Tomorrow",
+      "url": "https://youtu.be/5GznH7W5l_8"
+    },
+    {
+      "id": 9,
+      "categoriaId": 1,
+      "titulo": "Evil Warning",
+      "url": "https://youtu.be/SeeT2qQ2u38"
+    },
+    {
+      "id": 10,
+      "categoriaId": 1,
+      "titulo": "Lasting Child",
+      "url": "https://youtu.be/w_w_FlFYe3Y"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "Freedom Call",
+      "url": "https://youtu.be/b_Nh0wRtH6c"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "Queen of the Night (Remix)",
+      "url": "https://youtu.be/xbF47q5obds"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "Reaching Horizons",
+      "url": "https://youtu.be/rtDvibixzQU"
+    },
+    {
+      "id": 14,
+      "categoriaId": 2,
+      "titulo": "Stand Away (Orchestral Version)",
+      "url": "https://youtu.be/zGwR2nIW0qw"
+    },
+    {
+      "id": 15,
+      "categoriaId": 2,
+      "titulo": "Painkiller (Remixed Version)",
+      "url": "https://youtu.be/pyr-6Wbqtxg"
+    },
+    {
+      "id": 16,
+      "categoriaId": 2,
+      "titulo": "Deep Blue",
+      "url": "https://youtu.be/qzc-AqfUePE"
+    },
+    {
+      "id": 17,
+      "categoriaId": 2,
+      "titulo": "Angels Cry (Acoustic) (Live)",
+      "url": "https://youtu.be/HDnAps3b-Ow"
+    },
+    {
+      "id": 18,
+      "categoriaId": 2,
+      "titulo": "Never Understand (Acoustic) (Live)",
+      "url": "https://youtu.be/yq3Dt1BTN_0"
+    },
+    {
+      "id": 19,
+      "categoriaId": 3,
+      "titulo": "Crossing",
+      "url": "https://youtu.be/HRZk86h-Ngo"
+    },
+    {
+      "id": 20,
+      "categoriaId": 3,
+      "titulo": "Nothing to Say",
+      "url": "https://youtu.be/o_OhKvepsDw"
+    },
+    {
+      "id": 21,
+      "categoriaId": 3,
+      "titulo": "Silence and Distance",
+      "url": "https://youtu.be/59tCf1HwwZ4"
+    },
+    {
+      "id": 22,
+      "categoriaId": 3,
+      "titulo": "Carolina IV",
+      "url": "https://youtu.be/LgzGzlQezAc"
+    },
+    {
+      "id": 23,
+      "categoriaId": 3,
+      "titulo": "Holy Land",
+      "url": "https://youtu.be/-JjS6VjyRZc"
+    },
+    {
+      "id": 24,
+      "categoriaId": 3,
+      "titulo": "The Shaman",
+      "url": "https://youtu.be/Lu7K-wUUCas"
+    },
+    {
+      "id": 25,
+      "categoriaId": 3,
+      "titulo": "Make Believe",
+      "url": "https://youtu.be/QnRxa8JvBRw"
+    },
+    {
+      "id": 26,
+      "categoriaId": 3,
+      "titulo": "Z.I.T.O.",
+      "url": "https://youtu.be/lvLp5xhWsLg"
+    },
+    {
+      "id": 27,
+      "categoriaId": 3,
+      "titulo": "Deep Blue",
+      "url": "https://youtu.be/q7-leTNLmU4"
+    },
+    {
+      "id": 28,
+      "categoriaId": 3,
+      "titulo": "Lullaby for Lucifer",
+      "url": "https://youtu.be/cN1-V4smVfs"
+    },
+    {
+      "id": 29,
+      "categoriaId": 4,
+      "titulo": "Crossing (Live)",
+      "url": "https://youtu.be/hvEDaj2rwOM"
+    },
+    {
+      "id": 30,
+      "categoriaId": 4,
+      "titulo": "Nothing to Say (Live)",
+      "url": "https://youtu.be/UqfpeaQB3Rg"
+    },
+    {
+      "id": 31,
+      "categoriaId": 4,
+      "titulo": "Z.I.T.O. (Live)",
+      "url": "https://youtu.be/cuXl6MGaGrs"
+    },
+    {
+      "id": 32,
+      "categoriaId": 4,
+      "titulo": "Carolina IV (Live)",
+      "url": "https://youtu.be/Ijs_W3Q8eds"
+    },
+    {
+      "id": 33,
+      "categoriaId": 5,
+      "titulo": "Wings of Reality",
+      "url": "https://youtu.be/rBVe5ZPjHbU"
+    },
+    {
+      "id": 34,
+      "categoriaId": 5,
+      "titulo": "Petrified Eyes",
+      "url": "https://youtu.be/SO3Tm5RtHts"
+    },
+    {
+      "id": 35,
+      "categoriaId": 5,
+      "titulo": "Lisbon",
+      "url": "https://youtu.be/sEENXY01d-s"
+    },
+    {
+      "id": 36,
+      "categoriaId": 5,
+      "titulo": "Metal Icarus",
+      "url": "https://youtu.be/L6hAqj5peFw"
+    },
+    {
+      "id": 37,
+      "categoriaId": 5,
+      "titulo": "Paradise",
+      "url": "https://youtu.be/UT0wm6Qvzng"
+    },
+    {
+      "id": 38,
+      "categoriaId": 5,
+      "titulo": "Mystery Machine",
+      "url": "https://youtu.be/7aUqkNMfi6c"
+    },
+    {
+      "id": 39,
+      "categoriaId": 5,
+      "titulo": "Fireworks",
+      "url": "https://youtu.be/_0goayXaUZc"
+    },
+    {
+      "id": 40,
+      "categoriaId": 5,
+      "titulo": "Extreme Dream",
+      "url": "https://youtu.be/nw8RbMZRnCw"
+    },
+    {
+      "id": 41,
+      "categoriaId": 5,
+      "titulo": "Gentle Change",
+      "url": "https://youtu.be/mnoIm-qmvu0"
+    },
+    {
+      "id": 42,
+      "categoriaId": 5,
+      "titulo": "Speed",
+      "url": "https://youtu.be/V_RT-lg2XmA"
+    }
+  ]
+}

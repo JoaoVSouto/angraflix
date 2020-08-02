@@ -6,6 +6,7 @@ interface DataLinkExtra {
 interface DataVideo {
   titulo: string;
   url: string;
+  description?: string;
 }
 
 interface DataCategory {
