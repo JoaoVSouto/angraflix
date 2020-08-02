@@ -24,7 +24,7 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "server": "json-server --watch server/db.json --port 3333",
+    "server": "node ./server",
     "dev": "concurrently \"yarn start\" \"yarn server\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
