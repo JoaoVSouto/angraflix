@@ -6,14 +6,16 @@ interface IPropsContainer {
 
 export const Container = styled.div<IPropsContainer>`
   position: relative;
-  transition: all 0.3s;
+  transition: opacity 0.3s linear, transform 0.3s linear,
+    max-height 0.3s linear 0.3s;
 
   ${({ hideBehind }) =>
     hideBehind &&
     css`
-      transform: translateY(-170%);
+      transform: translateY(-50%);
       z-index: -1;
-      height: 0;
+      max-height: 0;
+      opacity: 0;
       margin: 0 !important;
     `}
 

@@ -113,6 +113,7 @@ const CadastroCategoria: React.FC = () => {
           value={categoryInfo.descriptionUrl}
           onChange={handleInputChange}
           hideBehind={!categoryInfo.description}
+          disabled={!categoryInfo.description}
         />
 
         <Input
