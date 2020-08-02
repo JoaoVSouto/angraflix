@@ -5,8 +5,11 @@ import api from '../../services/api';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 
+import { Loading, LoadingContainer } from './styles';
+
 const Home: React.FC = () => {
   const [categories, setCategories] = useState<DataCategory[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     (async () => {
@@ -21,12 +24,14 @@ const Home: React.FC = () => {
       }));
 
       setCategories(categoriesMounted);
+
+      setIsLoading(false);
     })();
   }, []);
 
   return (
     <>
-      {categories.length > 0 && (
+      {!isLoading ? (
         <>
           <BannerMain
             videoTitle={categories[0].videos[0].titulo}
@@ -42,6 +47,17 @@ const Home: React.FC = () => {
             />
           ))}
         </>
+      ) : (
+        <LoadingContainer>
+          <Loading>
+            <div />
+            <div />
+            <div />
+            <div />
+          </Loading>
+
+          <h1>Carregando...</h1>
+        </LoadingContainer>
       )}
     </>
   );
