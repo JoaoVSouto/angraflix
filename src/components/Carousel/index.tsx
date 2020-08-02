@@ -36,7 +36,7 @@ const Carousel: React.FC<IProps> = ({ category, ignoreFirstVideo }) => {
           }
 
           return (
-            <SliderItem key={video.titulo}>
+            <SliderItem key={video.id}>
               <VideoCard
                 videoTitle={video.titulo}
                 videoURL={video.url}

@@ -4,14 +4,16 @@ interface DataLinkExtra {
 }
 
 interface DataVideo {
+  id: number;
+  categoriaId: number;
   titulo: string;
   url: string;
   description?: string;
 }
 
 interface DataCategory {
+  id: number;
   titulo: string;
-  link?: string;
   cor?: string;
   link_extra?: DataLinkExtra;
   addedNow?: boolean;

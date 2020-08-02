@@ -1,32 +1,48 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
+import api from '../../services/api';
 
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 
-import initialData from '../../data/dados_iniciais.json';
-
-interface IInitialData {
-  categorias: DataCategory[];
-}
-
 const Home: React.FC = () => {
-  const data = initialData as IInitialData;
+  const [categories, setCategories] = useState<DataCategory[]>([]);
+
+  useEffect(() => {
+    (async () => {
+      const categoriesResponse = await api.get<DataCategory[]>('categorias');
+      const videosResponse = await api.get<DataVideo[]>('videos');
+
+      const categoriesMounted = categoriesResponse.data.map(category => ({
+        ...category,
+        videos: videosResponse.data.filter(
+          video => video.categoriaId === category.id
+        ),
+      }));
+
+      setCategories(categoriesMounted);
+    })();
+  }, []);
 
   return (
     <>
-      <BannerMain
-        videoTitle={data.categorias[0].videos[0].titulo}
-        url={data.categorias[0].videos[0].url}
-        videoDescription="Unfinished Allegro (instrumental) foi a música de abertura do álbum Angels Cry, lançado em 1993."
-      />
+      {categories.length > 0 && (
+        <>
+          <BannerMain
+            videoTitle={categories[0].videos[0].titulo}
+            url={categories[0].videos[0].url}
+            videoDescription={categories[0].videos[0].description || ''}
+          />
 
-      {data.categorias.map((category, index) => (
-        <Carousel
-          key={category.titulo}
-          ignoreFirstVideo={index === 0}
-          category={category}
-        />
-      ))}
+          {categories.map((category, index) => (
+            <Carousel
+              key={category.id}
+              ignoreFirstVideo={index === 0}
+              category={category}
+            />
+          ))}
+        </>
+      )}
     </>
   );
 };

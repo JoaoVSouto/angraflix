@@ -1,19 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import api from '../../../services/api';
 
 import Input from '../../../components/Input';
 import Textarea from '../../../components/Textarea';
-
-import initialData from '../../../data/dados_iniciais.json';
 
 import { Categories, Category, SubmitButton } from './styles';
 
 type InputChangeHandlerEvent =
   | React.ChangeEvent<HTMLInputElement>
   | React.ChangeEvent<HTMLTextAreaElement>;
-
-interface IInitialData {
-  categorias: DataCategory[];
-}
 
 interface ICategoryInfo {
   name: string;
@@ -29,13 +25,19 @@ const initialCategoryInfo: ICategoryInfo = {
   name: '',
 };
 
-const { categorias } = initialData as IInitialData;
-
 const CadastroCategoria: React.FC = () => {
   const [categoryInfo, setCategoryInfo] = useState<ICategoryInfo>(
     initialCategoryInfo
   );
-  const [categories, setCategories] = useState<DataCategory[]>(categorias);
+  const [categories, setCategories] = useState<DataCategory[]>([]);
+
+  useEffect(() => {
+    (async () => {
+      const categoriesResponse = await api.get<DataCategory[]>('categorias');
+
+      setCategories(categoriesResponse.data);
+    })();
+  }, []);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
@@ -52,6 +54,7 @@ const CadastroCategoria: React.FC = () => {
     }
 
     const categoryData: DataCategory = {
+      id: 1,
       titulo: categoryInfo.name,
       videos: [],
       cor: categoryInfo.color,
@@ -137,7 +140,7 @@ const CadastroCategoria: React.FC = () => {
         <h3>Categorias</h3>
         {categories.map((category, index) => (
           <Category
-            key={category.titulo}
+            key={category.id}
             categoryColor={category.cor}
             animationDelay={category.addedNow ? 0 : index * 100}
           >
