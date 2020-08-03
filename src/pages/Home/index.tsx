@@ -13,18 +13,13 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     (async () => {
-      const categoriesResponse = await api.get<DataCategory[]>('categorias');
-      const videosResponse = await api.get<DataVideo[]>('videos');
+      const categoriesResponse = await api.get<DataCategory[]>('categorias', {
+        params: {
+          _embed: 'videos',
+        },
+      });
 
-      const categoriesMounted = categoriesResponse.data.map(category => ({
-        ...category,
-        videos: videosResponse.data.filter(
-          video => video.categoriaId === category.id
-        ),
-      }));
-
-      setCategories(categoriesMounted);
-
+      setCategories(categoriesResponse.data);
       setIsLoading(false);
     })();
   }, []);
