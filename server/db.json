@@ -43,59 +43,16 @@
       "link_extra": {
         "text": "Saiba mais sobre o álbum",
         "url": "https://pt.wikipedia.org/wiki/Fireworks_(%C3%A1lbum)"
+      }
+    },
+    {
+      "titulo": "Rebirth",
+      "cor": "#4671dd",
+      "link_extra": {
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Rebirth_(%C3%A1lbum_de_Angra)"
       },
-      "videos": [
-        {
-          "id": 1,
-          "titulo": "Wings of Reality",
-          "url": "https://youtu.be/rBVe5ZPjHbU"
-        },
-        {
-          "id": 2,
-          "titulo": "Petrified Eyes",
-          "url": "https://youtu.be/SO3Tm5RtHts"
-        },
-        {
-          "id": 3,
-          "titulo": "Lisbon",
-          "url": "https://youtu.be/sEENXY01d-s"
-        },
-        {
-          "id": 4,
-          "titulo": "Metal Icarus",
-          "url": "https://youtu.be/L6hAqj5peFw"
-        },
-        {
-          "id": 5,
-          "titulo": "Paradise",
-          "url": "https://youtu.be/UT0wm6Qvzng"
-        },
-        {
-          "id": 6,
-          "titulo": "Mystery Machine",
-          "url": "https://youtu.be/7aUqkNMfi6c"
-        },
-        {
-          "id": 7,
-          "titulo": "Fireworks",
-          "url": "https://youtu.be/_0goayXaUZc"
-        },
-        {
-          "id": 8,
-          "titulo": "Extreme Dream",
-          "url": "https://youtu.be/nw8RbMZRnCw"
-        },
-        {
-          "id": 9,
-          "titulo": "Gentle Change",
-          "url": "https://youtu.be/mnoIm-qmvu0"
-        },
-        {
-          "id": 10,
-          "titulo": "Speed",
-          "url": "https://youtu.be/V_RT-lg2XmA"
-        }
-      ]
+      "id": 6
     }
   ],
   "videos": [

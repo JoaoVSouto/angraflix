@@ -53,8 +53,8 @@ const CadastroCategoria: React.FC = () => {
       return;
     }
 
-    const categoryData: DataCategory = {
-      id: 1,
+    const categoryData = {
+      id: Math.floor(Math.random() * 1000) + 20,
       titulo: categoryInfo.name,
       videos: [],
       cor: categoryInfo.color,
@@ -70,6 +70,15 @@ const CadastroCategoria: React.FC = () => {
     document
       .querySelectorAll('.filled')
       .forEach(elem => elem.classList.remove('filled'));
+
+    api.post('categorias', {
+      titulo: categoryInfo.name,
+      cor: categoryInfo.color,
+      link_extra: {
+        text: categoryInfo.description,
+        url: categoryInfo.descriptionUrl,
+      },
+    });
   };
 
   const handleInputChange = (e: InputChangeHandlerEvent): void => {
@@ -87,7 +96,7 @@ const CadastroCategoria: React.FC = () => {
 
   return (
     <>
-      <h1>Nova categoria</h1>
+      <h1>Cadastro de categoria</h1>
 
       <form onSubmit={handleSubmit}>
         <Input
