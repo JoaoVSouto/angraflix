@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 import api from '../../../services/api';
@@ -25,6 +26,8 @@ const initialVideoInfo: IVideoInfo = {
 };
 
 const CadastroVideo: React.FC = () => {
+  const history = useHistory();
+
   const [videoInfo, setVideoInfo, resetVideoInfo] = useForm<IVideoInfo>(
     initialVideoInfo
   );
@@ -70,6 +73,7 @@ const CadastroVideo: React.FC = () => {
         .forEach(elem => elem.classList.remove('filled'));
 
       toast.success('Vídeo cadastrado com sucesso!');
+      history.push('/');
     } catch (err) {
       toast.error(err.response?.data?.error || 'Erro ao cadastrar vídeo.');
     }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 import api from '../../../services/api';
@@ -31,6 +32,8 @@ const initialCategoryInfo: ICategoryInfo = {
 };
 
 const CadastroCategoria: React.FC = () => {
+  const history = useHistory();
+
   const [categoryInfo, setCategoryInfo, resetCategoryInfo] = useForm<
     ICategoryInfo
   >(initialCategoryInfo);
@@ -92,6 +95,7 @@ const CadastroCategoria: React.FC = () => {
         .forEach(elem => elem.classList.remove('filled'));
 
       toast.success('Categoria cadastrada com sucesso!');
+      history.push('/');
     } catch (err) {
       toast.error(err.response?.data?.error || 'Erro ao cadastrar categoria.');
     }
