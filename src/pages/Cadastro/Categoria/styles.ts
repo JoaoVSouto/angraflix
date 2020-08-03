@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { readableColor } from 'polished';
 
-import { Button } from '../../../components/Button';
+export { SubmitButton } from '../../../_layout/CadastroLayout';
 
 export const Categories = styled.div`
   margin-top: 16px;
@@ -19,13 +19,6 @@ export const Categories = styled.div`
   @media (max-width: 800px) {
     max-width: unset;
   }
-`;
-
-export const SubmitButton = styled(Button)`
-  background-color: var(--primary);
-  border: 0;
-  color: var(--white);
-  margin-top: 24px;
 `;
 
 interface ICategoryProps {

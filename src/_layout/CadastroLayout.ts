@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+import { Button } from '../components/Button';
+
+export const SubmitButton = styled(Button)`
+  background-color: var(--primary);
+  border: 0;
+  color: var(--white);
+  margin-top: 24px;
+`;
+
 const CadastroLayout = styled.main`
   background-color: var(--black);
   color: var(--white);
