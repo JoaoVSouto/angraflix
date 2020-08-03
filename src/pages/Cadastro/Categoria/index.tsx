@@ -102,7 +102,7 @@ const CadastroCategoria: React.FC = () => {
         <Input
           type="text"
           name="name"
-          label="Nome da categoria"
+          label="Título"
           id="categoria-name"
           value={categoryInfo.name}
           onChange={handleInputChange}
