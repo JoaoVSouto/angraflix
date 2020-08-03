@@ -31,6 +31,7 @@ const CadastroCategoria: React.FC = () => {
   const [categoryInfo, setCategoryInfo, resetCategoryInfo] = useForm<
     ICategoryInfo
   >(initialCategoryInfo);
+
   const [categories, setCategories] = useState<DataCategory[]>([]);
 
   useEffect(() => {

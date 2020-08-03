@@ -308,6 +308,76 @@
       "categoriaId": 5,
       "titulo": "Speed",
       "url": "https://youtu.be/V_RT-lg2XmA"
+    },
+    {
+      "categoriaId": 6,
+      "titulo": "In Excelsis",
+      "description": "",
+      "url": "https://youtu.be/mdykUJyrLDs",
+      "id": 43
+    },
+    {
+      "categoriaId": 6,
+      "titulo": "Nova Era",
+      "description": "",
+      "url": "https://youtu.be/9hWQyHE-q-M",
+      "id": 44
+    },
+    {
+      "categoriaId": 6,
+      "titulo": "Millennium Sun",
+      "description": "",
+      "url": "https://youtu.be/eJMzOosPX9w",
+      "id": 45
+    },
+    {
+      "categoriaId": 6,
+      "titulo": "Acid Rain",
+      "description": "",
+      "url": "https://youtu.be/5_kSRKorE1s",
+      "id": 46
+    },
+    {
+      "categoriaId": 6,
+      "titulo": "Heroes of Sand",
+      "description": "",
+      "url": "https://youtu.be/JTkCddQSBVI",
+      "id": 47
+    },
+    {
+      "categoriaId": 6,
+      "titulo": "Unholy Wars",
+      "description": "",
+      "url": "https://youtu.be/g35hH84l04I",
+      "id": 48
+    },
+    {
+      "categoriaId": 6,
+      "titulo": "Rebirth",
+      "description": "",
+      "url": "https://youtu.be/r5xFvVNgIzE",
+      "id": 49
+    },
+    {
+      "categoriaId": 6,
+      "titulo": "Judgement Day",
+      "description": "",
+      "url": "https://youtu.be/oNlvrj2seFM",
+      "id": 50
+    },
+    {
+      "categoriaId": 6,
+      "titulo": "Running Alone",
+      "description": "",
+      "url": "https://youtu.be/3pMcr-Jn5L0",
+      "id": 51
+    },
+    {
+      "categoriaId": 6,
+      "titulo": "Visions Prelude",
+      "description": "",
+      "url": "https://youtu.be/XHKy3YZ0L0M",
+      "id": 52
     }
   ]
 }

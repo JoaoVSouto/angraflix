@@ -19,8 +19,8 @@ const Input: React.FC<JSX.IntrinsicElements['input'] & IProps> = ({
       <label htmlFor={id}>
         <input id={id} {...rest} />
         <span>{label}</span>
+        {children}
       </label>
-      {children}
     </Container>
   );
 };
