@@ -13,6 +13,7 @@ interface IVideoInfo {
   url: string;
   category: string;
   description?: string;
+  token?: string;
 }
 
 const initialVideoInfo: IVideoInfo = {
@@ -20,6 +21,7 @@ const initialVideoInfo: IVideoInfo = {
   url: '',
   category: '',
   description: '',
+  token: '',
 };
 
 const CadastroVideo: React.FC = () => {
@@ -54,21 +56,22 @@ const CadastroVideo: React.FC = () => {
         return;
       }
 
-      resetVideoInfo();
-      document
-        .querySelectorAll('.filled')
-        .forEach(elem => elem.classList.remove('filled'));
-
       await api.post('videos', {
         categoriaId: category.id,
         titulo: videoInfo.title.trim(),
         description: videoInfo.description?.trim(),
         url: videoInfo.url.trim(),
+        token: videoInfo.token,
       });
 
+      resetVideoInfo();
+      document
+        .querySelectorAll('.filled')
+        .forEach(elem => elem.classList.remove('filled'));
+
       toast.success('Vídeo cadastrado com sucesso!');
-    } catch {
-      toast.error('Erro ao cadastrar vídeo.');
+    } catch (err) {
+      toast.error(err.response?.data?.error || 'Erro ao cadastrar vídeo.');
     }
   };
 
@@ -135,6 +138,16 @@ const CadastroVideo: React.FC = () => {
             ))}
           </datalist>
         </Input>
+
+        <Input
+          type="text"
+          name="token"
+          label="Token"
+          id="video-token"
+          value={videoInfo.token}
+          onChange={handleInputChange}
+          autoComplete="off"
+        />
 
         <SubmitButton type="submit">Cadastrar</SubmitButton>
       </form>

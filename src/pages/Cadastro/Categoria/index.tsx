@@ -19,6 +19,7 @@ interface ICategoryInfo {
   description: string;
   descriptionUrl: string;
   color: string;
+  token?: string;
 }
 
 const initialCategoryInfo: ICategoryInfo = {
@@ -26,6 +27,7 @@ const initialCategoryInfo: ICategoryInfo = {
   description: '',
   descriptionUrl: '',
   name: '',
+  token: '',
 };
 
 const CadastroCategoria: React.FC = () => {
@@ -73,12 +75,6 @@ const CadastroCategoria: React.FC = () => {
         addedNow: true,
       };
 
-      setCategories([...categories, categoryData]);
-      resetCategoryInfo();
-      document
-        .querySelectorAll('.filled')
-        .forEach(elem => elem.classList.remove('filled'));
-
       await api.post('categorias', {
         titulo: categoryNameTrimmed,
         cor: categoryInfo.color,
@@ -86,11 +82,18 @@ const CadastroCategoria: React.FC = () => {
           text: categoryInfo.description.trim(),
           url: categoryInfo.descriptionUrl.trim(),
         },
+        token: categoryInfo.token,
       });
 
+      setCategories([...categories, categoryData]);
+      resetCategoryInfo();
+      document
+        .querySelectorAll('.filled')
+        .forEach(elem => elem.classList.remove('filled'));
+
       toast.success('Categoria cadastrada com sucesso!');
-    } catch {
-      toast.error('Erro ao cadastrar categoria.');
+    } catch (err) {
+      toast.error(err.response?.data?.error || 'Erro ao cadastrar categoria.');
     }
   };
 
@@ -151,6 +154,16 @@ const CadastroCategoria: React.FC = () => {
             style={{ backgroundColor: categoryInfo.color }}
           />
         </Input>
+
+        <Input
+          type="text"
+          name="token"
+          label="Token"
+          id="categoria-token"
+          value={categoryInfo.token}
+          onChange={handleInputChange}
+          autoComplete="off"
+        />
 
         <SubmitButton type="submit">Cadastrar</SubmitButton>
       </form>
