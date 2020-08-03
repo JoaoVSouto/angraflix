@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import api from '../../../services/api';
 
+import { useForm } from '../../../hooks/useForm';
+
 import Input from '../../../components/Input';
 import Textarea from '../../../components/Textarea';
 
@@ -26,9 +28,9 @@ const initialCategoryInfo: ICategoryInfo = {
 };
 
 const CadastroCategoria: React.FC = () => {
-  const [categoryInfo, setCategoryInfo] = useState<ICategoryInfo>(
-    initialCategoryInfo
-  );
+  const [categoryInfo, setCategoryInfo, resetCategoryInfo] = useForm<
+    ICategoryInfo
+  >(initialCategoryInfo);
   const [categories, setCategories] = useState<DataCategory[]>([]);
 
   useEffect(() => {
@@ -55,7 +57,7 @@ const CadastroCategoria: React.FC = () => {
 
     const categoryData = {
       id: Math.floor(Math.random() * 1000) + 20,
-      titulo: categoryInfo.name,
+      titulo: categoryNameTrimmed,
       videos: [],
       cor: categoryInfo.color,
       link_extra: {
@@ -66,17 +68,17 @@ const CadastroCategoria: React.FC = () => {
     };
 
     setCategories([...categories, categoryData]);
-    setCategoryInfo(initialCategoryInfo);
+    resetCategoryInfo();
     document
       .querySelectorAll('.filled')
       .forEach(elem => elem.classList.remove('filled'));
 
     api.post('categorias', {
-      titulo: categoryInfo.name,
+      titulo: categoryNameTrimmed,
       cor: categoryInfo.color,
       link_extra: {
-        text: categoryInfo.description,
-        url: categoryInfo.descriptionUrl,
+        text: categoryInfo.description.trim(),
+        url: categoryInfo.descriptionUrl.trim(),
       },
     });
   };
@@ -88,10 +90,7 @@ const CadastroCategoria: React.FC = () => {
       e.target.classList.remove('filled');
     }
 
-    setCategoryInfo({
-      ...categoryInfo,
-      [e.target.name]: e.target.value,
-    });
+    setCategoryInfo(e.target);
   };
 
   return (
