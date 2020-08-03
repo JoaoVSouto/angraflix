@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 
 import api from '../../../services/api';
 
@@ -36,30 +37,39 @@ const CadastroVideo: React.FC = () => {
     })();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
+    try {
+      e.preventDefault();
 
-    const categoryTrimmed = videoInfo.category.trim();
+      const categoryTrimmed = videoInfo.category.trim();
 
-    const category = categories.find(
-      ctg => ctg.titulo.toLowerCase() === categoryTrimmed.toLowerCase()
-    );
+      const category = categories.find(
+        ctg => ctg.titulo.toLowerCase() === categoryTrimmed.toLowerCase()
+      );
 
-    if (!category) {
-      return;
+      if (!category) {
+        toast.error('Opa! Categoria inválida.');
+        return;
+      }
+
+      resetVideoInfo();
+      document
+        .querySelectorAll('.filled')
+        .forEach(elem => elem.classList.remove('filled'));
+
+      await api.post('videos', {
+        categoriaId: category.id,
+        titulo: videoInfo.title.trim(),
+        description: videoInfo.description?.trim(),
+        url: videoInfo.url.trim(),
+      });
+
+      toast.success('Vídeo cadastrado com sucesso!');
+    } catch {
+      toast.error('Erro ao cadastrar vídeo.');
     }
-
-    resetVideoInfo();
-    document
-      .querySelectorAll('.filled')
-      .forEach(elem => elem.classList.remove('filled'));
-
-    api.post('videos', {
-      categoriaId: category.id,
-      titulo: videoInfo.title.trim(),
-      description: videoInfo.description?.trim(),
-      url: videoInfo.url.trim(),
-    });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {

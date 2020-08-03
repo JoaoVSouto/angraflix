@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 
 import api from '../../../services/api';
 
@@ -42,46 +43,55 @@ const CadastroCategoria: React.FC = () => {
     })();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
+    try {
+      e.preventDefault();
 
-    const categoryNameTrimmed = categoryInfo.name.trim();
+      const categoryNameTrimmed = categoryInfo.name.trim();
 
-    const existsCategoryWithSameName = categories.find(
-      category =>
-        category.titulo.toLowerCase() === categoryNameTrimmed.toLowerCase()
-    );
+      const existsCategoryWithSameName = categories.find(
+        category =>
+          category.titulo.toLowerCase() === categoryNameTrimmed.toLowerCase()
+      );
 
-    if (existsCategoryWithSameName) {
-      return;
+      if (existsCategoryWithSameName) {
+        toast.error('Opa! Já existe uma categoria com esse nome.');
+        return;
+      }
+
+      const categoryData = {
+        id: Math.floor(Math.random() * 1000) + 20,
+        titulo: categoryNameTrimmed,
+        videos: [],
+        cor: categoryInfo.color,
+        link_extra: {
+          text: categoryInfo.description,
+          url: categoryInfo.descriptionUrl,
+        },
+        addedNow: true,
+      };
+
+      setCategories([...categories, categoryData]);
+      resetCategoryInfo();
+      document
+        .querySelectorAll('.filled')
+        .forEach(elem => elem.classList.remove('filled'));
+
+      await api.post('categorias', {
+        titulo: categoryNameTrimmed,
+        cor: categoryInfo.color,
+        link_extra: {
+          text: categoryInfo.description.trim(),
+          url: categoryInfo.descriptionUrl.trim(),
+        },
+      });
+
+      toast.success('Categoria cadastrada com sucesso!');
+    } catch {
+      toast.error('Erro ao cadastrar categoria.');
     }
-
-    const categoryData = {
-      id: Math.floor(Math.random() * 1000) + 20,
-      titulo: categoryNameTrimmed,
-      videos: [],
-      cor: categoryInfo.color,
-      link_extra: {
-        text: categoryInfo.description,
-        url: categoryInfo.descriptionUrl,
-      },
-      addedNow: true,
-    };
-
-    setCategories([...categories, categoryData]);
-    resetCategoryInfo();
-    document
-      .querySelectorAll('.filled')
-      .forEach(elem => elem.classList.remove('filled'));
-
-    api.post('categorias', {
-      titulo: categoryNameTrimmed,
-      cor: categoryInfo.color,
-      link_extra: {
-        text: categoryInfo.description.trim(),
-        url: categoryInfo.descriptionUrl.trim(),
-      },
-    });
   };
 
   const handleInputChange = (e: InputChangeHandlerEvent): void => {
