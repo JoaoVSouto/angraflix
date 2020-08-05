@@ -14,7 +14,7 @@
       "titulo": "Freedom Call",
       "cor": "#c7ae90",
       "link_extra": {
-        "text": "Saiba mais sobre o álbum",
+        "text": "Saiba mais sobre o EP",
         "url": "https://pt.wikipedia.org/wiki/Freedom_Call_(%C3%A1lbum_de_Angra)"
       }
     },
@@ -32,7 +32,7 @@
       "titulo": "Holy Live",
       "cor": "#a45a3d",
       "link_extra": {
-        "text": "Saiba mais sobre o álbum",
+        "text": "Saiba mais sobre o EP",
         "url": "https://pt.wikipedia.org/wiki/Holy_Live"
       }
     },
@@ -53,6 +53,24 @@
         "url": "https://pt.wikipedia.org/wiki/Rebirth_(%C3%A1lbum_de_Angra)"
       },
       "id": 6
+    },
+    {
+      "titulo": "Hunters and Prey",
+      "cor": "#303981",
+      "link_extra": {
+        "text": "Saiba mais sobre o EP",
+        "url": "https://pt.wikipedia.org/wiki/Hunters_and_Prey"
+      },
+      "id": 7
+    },
+    {
+      "titulo": "Temple of Shadows",
+      "cor": "#671915",
+      "link_extra": {
+        "text": "Saiba mais sobre o álbum",
+        "url": "https://pt.wikipedia.org/wiki/Temple_of_Shadows"
+      },
+      "id": 8
     }
   ],
   "videos": [
@@ -378,6 +396,146 @@
       "description": "",
       "url": "https://youtu.be/XHKy3YZ0L0M",
       "id": 52
+    },
+    {
+      "categoriaId": 7,
+      "titulo": "Live and Learn",
+      "description": "",
+      "url": "https://youtu.be/pPIuJdFjL5M",
+      "id": 53
+    },
+    {
+      "categoriaId": 7,
+      "titulo": "Bleeding Heart",
+      "description": "",
+      "url": "https://youtu.be/sZl9zL5tVk4",
+      "id": 54
+    },
+    {
+      "categoriaId": 7,
+      "titulo": "Eyes of Christ",
+      "description": "",
+      "url": "https://youtu.be/XTDkV_hwVuE",
+      "id": 55
+    },
+    {
+      "categoriaId": 7,
+      "titulo": "Rebirth (Acoustic Version)",
+      "description": "",
+      "url": "https://youtu.be/xGlAahLvwxA",
+      "id": 56
+    },
+    {
+      "categoriaId": 7,
+      "titulo": "Heroes of Sand (Acoustic Version)",
+      "description": "",
+      "url": "https://youtu.be/qfzIS-51Ej4",
+      "id": 57
+    },
+    {
+      "categoriaId": 7,
+      "titulo": "Mama",
+      "description": "",
+      "url": "https://youtu.be/P6WN5iY2ugQ",
+      "id": 58
+    },
+    {
+      "categoriaId": 7,
+      "titulo": "Caça E Caçador",
+      "description": "",
+      "url": "https://youtu.be/oD0L5Jl4G-g",
+      "id": 59
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "Deus Le Volt!",
+      "description": "",
+      "url": "https://youtu.be/RVODG7IvK9M",
+      "id": 60
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "Spread Your Fire",
+      "description": "",
+      "url": "https://youtu.be/Ds8W3eQ5-Io",
+      "id": 61
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "Angels and Demons",
+      "description": "",
+      "url": "https://youtu.be/QzWwcjSrSuE",
+      "id": 62
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "Waiting Silence",
+      "description": "",
+      "url": "https://youtu.be/b07nw2VXBmY",
+      "id": 63
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "Wishing Well",
+      "description": "",
+      "url": "https://youtu.be/6b0Dn2mBaTs",
+      "id": 64
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "The Temple of Hate",
+      "description": "",
+      "url": "https://youtu.be/2v3W_R-NSSM",
+      "id": 65
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "The Shadow Hunter",
+      "description": "",
+      "url": "https://youtu.be/aE3GkuykCKM",
+      "id": 66
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "No Pain for the Dead",
+      "description": "",
+      "url": "https://youtu.be/okK7UBjBn2M",
+      "id": 67
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "Winds of Destination",
+      "description": "",
+      "url": "https://youtu.be/iZsKF7gTDKA",
+      "id": 68
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "Sprouts of Time",
+      "description": "",
+      "url": "https://youtu.be/gBICwOzcrfU",
+      "id": 69
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "Morning Star",
+      "description": "",
+      "url": "https://youtu.be/IkJI3T-aoSg",
+      "id": 70
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "Late Redemption",
+      "description": "",
+      "url": "https://youtu.be/EXyvBvqIolc",
+      "id": 71
+    },
+    {
+      "categoriaId": 8,
+      "titulo": "Gate XIII",
+      "description": "",
+      "url": "https://youtu.be/81bN3aH8tVg",
+      "id": 72
     }
   ]
 }
